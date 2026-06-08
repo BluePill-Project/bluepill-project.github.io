@@ -109,3 +109,48 @@ h1 {
       linear-gradient(90deg, rgba(7, 11, 14, 0.46) 0%, rgba(7, 11, 14, 0.12) 100%);
   }
 }
+
+/* --- Style de la Licence Creative Commons --- */
+.hero-footer {
+  margin-top: auto; /* Pousse le footer tout en bas si l'écran est grand */
+  padding-top: 40px;
+  font-size: 0.8rem;
+  color: rgba(247, 250, 251, 0.55);
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  line-height: 1.6;
+}
+
+.hero-footer a {
+  color: var(--hero-accent);
+  text-decoration: none;
+  border-bottom: 1px dashed rgba(201, 220, 255, 0.3);
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.hero-footer a:hover {
+  color: #ffffff;
+  border-bottom-style: solid;
+  border-bottom-color: #ffffff;
+}
+
+.footer-icons {
+  display: inline-flex;
+  gap: 3px;
+  margin-left: 6px;
+  vertical-align: middle;
+}
+
+.footer-icons img {
+  width: 1.15rem;
+  height: 1.15rem;
+  /* ASTUCE : Aligne graphiquement les icônes noires sur ton thème sombre en les passant en blanc */
+  filter: invert(1) opacity(0.65);
+}
+
+/* Ajustement responsive pour petits écrans */
+@media (max-width: 620px) {
+  .hero-footer {
+    margin-top: 32px;
+    font-size: 0.75rem;
+  }
+}
