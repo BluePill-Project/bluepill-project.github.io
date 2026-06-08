@@ -120,7 +120,8 @@ h1 {
   line-height: 1.6;
 }
 
-.hero-footer a {
+.hero-footer a, 
+.hero-footer a:visited {
   color: var(--hero-accent);
   text-decoration: none;
   border-bottom: 1px dashed rgba(201, 220, 255, 0.3);
